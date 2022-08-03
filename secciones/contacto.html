@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../imagenes/favicon-32x32.png">
+        <link rel="stylesheet" href="../estilos/estilos.css">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <!-- inicio de fila de logo + nav -->
+        <header class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__brand">
+                    <img
+                        src="../imagenes/olimpo_svg_white.svg"
+                        alt="logo olimpo"
+                        width="95"
+                        height="25">
+                </div>
+                <nav class="navbar__menu">
+                    <div class="navbar__start">
+                        <!-- ejemplo de lista desordenada -->
+                        <ul>
+                            <li>
+                                <a class="navbar__item" href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="navbar__item" href="quienes_somos.html">¿Quienes Somos?</a>
+                            </li>
+                            <li>
+                                <a class="navbar__item" href="servicios.html">Servicios</a>
+                            </li>
+                            <li>
+                                <a class="navbar__item" href="soluciones.html">Soluciones</a>
+                            </li>
+                            <li>
+                                <a class="navbar__item" href="planes.html">Planes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__end">
+                        <div class="navbar__item">
+                            <a href="contacto.html" class="navbar__button btn-outlined">Contacto</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- cierre de fila logo + nav -->
+        <!-- seccion de contacto de mi sitio -->
+        <section class="information">
+            <article class="information__article">
+                <h1 class="information__title">Contacto<span class="information__subtitle">Estamos para atender tus consultas</span></h1>
+                <div class="information__number">5</div>
+                <div class="information__description">
+                    <h3>Formulario</h3>
+                    <p>
+                        Ponte en contacto con nostros a traves del siguiente formulario.
+                    </p>
+                    <!-- form de contacto -->
+                    <form class="information__form" action="#">
+                        <label for="nombre">Ingresa tu nombre:
+                            <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br/>
+                        </label>
+                        <label for="email">Ingresa tu email:
+                            <input type="email" placeholder="ejemplo@gmail.com" name="email"><br/>
+                        </label>
+                        <label for="Observaciones">
+                            Observaciones:<br/>
+                            <textarea placeholder="Observaciones"></textarea>
+                        </label>
+                        <br/>
+                        <label for="edad">Ingresa tu edad:
+                            <input type="number" name="edad" placeholder="Ingresa tu edad"><br/>
+                        </label>
+                        <div>
+                            <p>Elige un servicio:</p>
+                            <div>Desarrollo
+                                <input type="radio" name="lado" value="izquierda">
+                            </div>
+                            <div>Asesoría
+                                <input type="radio" name="lado" value="derecha">
+                            </div>
+                        </div>
+                        <p>Que modalidad de trabajo para tu empresa necesitas de nosotros?</p>
+                        <select name="letra" id="letra">
+                            <option value="presencial">Presencial</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="hibrido">H&iacute;brido</option>
+                        </select>
+                        <div>Queres recibir info sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1"></div>
+                        <input type="submit" value="ENVIAR INFORMACI&Oacute;N">
+                        <input type="reset" value="REINICIAR">
+                    </form>
+                    <!-- cierre de form contacto -->
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>Ubicación</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nos encontramos en Lote 07 urb. La Virreyna - Tacna.
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td>
+                                Ponemos a tu disposición el siguiente mapa donde podras encontrar la ubicación de nuestra oficina para que puedas tener una entrevista con nuestros expertos:
+                                <div class="information__map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.580601619808!2d-57.5736739!3d-38.0087366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x643af57e4933f20!2sCasa%20del%20Puente!5e0!3m2!1ses-419!2sar!4v1619616783943!5m2!1ses-419!2sar"
+                                        width="100%"
+                                        height="450"
+                                        style="border:0;"
+                                        allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
+                            </td>                            
+                        </tr>
+
+                    </table>
+                </div>
+            </article>
+        </section>
+        <!-- fin de seccion de contacto de mi sitio -->
+        <!-- inicio de footer -->
+        <footer class="footer">
+            <div class="footer__brand">
+                <img
+                    src="../imagenes/olimpo_svg_gris.svg"
+                    alt="logo olimpo"
+                    width="148"
+                    height="38">
+                <p>Todos los derechos reservados by Soluciones Olimpo SAC - 2022.</p>
+            </div>
+            <div class="footer__links">
+                <h3>CONTACTO</h3>
+                <a href="mailto:webmaster@solucionesolimpo.com">webmaster@solucionesolimpo.com</a>
+            </div>
+        </footer>
+        <!-- fin de footer -->
+    </body>
+</html>
