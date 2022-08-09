@@ -50,7 +50,6 @@
                             </div>                        
                     </nav>
                 </div>
-
             </div>
         </header>
         <!-- cierre de fila logo + nav -->
@@ -60,52 +59,69 @@
             <article class="information__article">
                 <h1 class="information__title">Contacto<span class="information__subtitle">Estamos para atender tus consultas</span></h1>
                 <div class="information__number">5</div>
-                <div class="information__description">
-                    <h3>Formulario</h3>
-                    <p>
+                <div class="information__description">                    
+                    <h3>
                         Ponte en contacto con nostros a traves del siguiente formulario.
-                    </p>
+                    </h3>
                     <!-- form de contacto -->
-                    <form class="information__form" action="#">
-                        <label for="nombre">Ingresa tu nombre:
-                            <input type="text" placeholder="Ingresa tu nombre" name="nombre"><br/>
-                        </label>
-                        <label for="email">Ingresa tu email:
-                            <input type="email" placeholder="ejemplo@gmail.com" name="email"><br/>
-                        </label>
-                        <label for="Observaciones">
-                            Observaciones:<br/>
-                            <textarea placeholder="Observaciones"></textarea>
-                        </label>
-                        <br/>
-                        <label for="edad">Ingresa tu edad:
-                            <input type="number" name="edad" placeholder="Ingresa tu edad"><br/>
-                        </label>
-                        <div>
-                            <p>Elige un servicio:</p>
-                            <div>Desarrollo
-                                <input type="radio" name="lado" value="izquierda">
-                            </div>
-                            <div>Asesoría
-                                <input type="radio" name="lado" value="derecha">
-                            </div>
+                    <form class="information__form" action="#">                        
+                        <div class="form-group">
+                            <label for="inputNombre">Ingresa tu nombre:</label>
+                                <input class="form-control form-control-lg text-uppercase font-weight-bold" type="text" placeholder="Ingresa tu nombre" name="inputNombre">
                         </div>
-                        <p>Que modalidad de trabajo para tu empresa necesitas de nosotros?</p>
-                        <select name="letra" id="letra">
-                            <option value="presencial">Presencial</option>
-                            <option value="remoto">Remoto</option>
-                            <option value="hibrido">H&iacute;brido</option>
-                        </select>
-                        <div>Queres recibir info sobre nosotros?
-                            <input type="checkbox" name="acepta" value="1"></div>
-                        <input type="submit" value="ENVIAR INFORMACI&Oacute;N">
-                        <input type="reset" value="REINICIAR">
+                        
+                        <div class="form-group">
+                            <label for="inputEmail">Ingresa tu email:</label>
+                                <input class="form-control form-control-lg text-uppercase" type="email" placeholder="ejemplo@gmail.com" name="inputEmail">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputObservaciones">Observaciones:</label>
+                                <textarea class="form-control form-control-lg text-uppercase" placeholder="Observaciones" name="inputObservaciones" rows="3"></textarea>                            
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="inputEdad">Ingresa tu edad:</label>
+                                <input class="form-control form-control-lg text-uppercase" type="number" name="inputEdad" placeholder="Ingresa tu edad"><br/>
+                        </div>
+
+                        <div>Elige un servicio:</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="lado" value="izquierda">
+                            <label class="form-check-label">Desarrollo</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="lado" value="derecha">
+                            <label class="form-check-label">Asesoría</label>
+                        </div>
+                                                                       
+
+                        <div class="form-group">
+                            <label for="inputLetra">¿Que modalidad de trabajo para tu empresa necesitas de nosotros?</label>
+                            <select name="inputLetra" id="letra">
+                                <option value="presencial">Presencial</option>
+                                <option value="remoto">Remoto</option>
+                                <option value="hibrido">H&iacute;brido</option>
+                            </select>
+                        </div>
+                        
+                        
+                        <div class="form-check form-check-inline">                            
+                            <input class="form-check-input" type="checkbox" name="inputAcepta" value="1">
+                            <label for="inputAcepta">¿Quieres recibir información sobre nosotros?</label>
+                        </div>
+
+                        <div class="forms-buttons">
+                            <input class="btn btn-primary" type="submit" value="ENVIAR INFORMACI&Oacute;N">
+                            <input class="btn btn-secondary" type="reset" value="REINICIAR">
+                        </div>                        
                     </form>
                     <!-- cierre de form contacto -->
                     <table>
                         <tr>
                             <td>
-                                <h3>Ubicación</h3>
+                                <h4>UBICACIÓN</h4>
                             </td>
                         </tr>
                         <tr>
@@ -127,7 +143,6 @@
                                 </div>
                             </td>                            
                         </tr>
-
                     </table>
                 </div>
             </article>

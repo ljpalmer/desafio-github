@@ -285,6 +285,7 @@ header{
     padding: 20px;
     border: 1px solid #4a4a4a;
     border-radius: 10px;
+    font-size: 1.8rem;
 }
 .information__plans{
     margin-left: auto;
