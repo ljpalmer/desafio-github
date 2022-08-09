@@ -12,45 +12,45 @@
     </head>
     <body>
         <!-- inicio de fila de logo + nav -->
-        <header class="navbar">
-            <div class="navbar__container">
-                <div class="navbar__brand">
-                    <img
-                        src="../imagenes/olimpo_svg_white.svg"
-                        alt="logo olimpo"
-                        width="95"
-                        height="25">
+        <header class="navbaro">
+            <div class="navbaro__container d-flex ">
+                <div class="navbaro__start w-100 ">
+                    <nav class="navbar navbar-expand-lg navbar-light navbar-brand">
+                        <div class="container-fluid">
+                            <a class="nav-brand" href=""><img
+                                src="../imagenes/olimpo_svg_white.svg"
+                                alt="logo olimpo"
+                                width="95"
+                                height="25"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="quienes_somos.html">¿Quienes somos?</a>
+                                </li>    
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="servicios.html">Servicios</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="soluciones.html">Soluciones</a>
+                                </li>                        
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="planes.html">Planes</a>
+                                </li>                        
+                                </ul>
+                                <div class="d-flex justify-content-center">                          
+                                    <a class="btn btn-outline-success navbaro__button" href="contacto.html" >Contacto</a>
+                                </div>
+                            </div>
+                            </div>                        
+                    </nav>
                 </div>
-                <nav class="navbar__menu">
-                    <div class="navbar__start">
-                        <!-- ejemplo de lista desordenada -->
-                        <ul>
-                            <li>
-                                <a class="navbar__item" href="../index.html">Home</a>
-                            </li>
-                            <li>
-                                <a class="navbar__item" href="quienes_somos.html">¿Quienes Somos?</a>
-                            </li>
-                            <li>
-                                <a class="navbar__item" href="servicios.html">Servicios</a>
-                            </li>
-                            <li>
-                                <a class="navbar__item" href="soluciones.html">Soluciones</a>
-                            </li>
-                            <li>
-                                <a class="navbar__item" href="planes.html">Planes</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar__end">
-                        <div class="navbar__item">
-                            <a href="contacto.html" class="navbar__button btn-outlined">Contacto</a>
-                        </div>
-                    </div>                    
-                </nav>
-                <div class="navbar__toggle">
-                    <img src="../imagenes/menu-bars-svgrepo-com.svg" width="30px" height="30px" alt="Menu toggle">
-                </div>
+
             </div>
         </header>
         <!-- cierre de fila logo + nav -->
