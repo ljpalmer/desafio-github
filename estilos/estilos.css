@@ -139,7 +139,7 @@ header{
 }
 .enterprise__objective{
     font-family: 'Poppins', sans-serif;
-    color: var()--Color-SubTitle-Olimpo;
+    color: var(--Color-SubTitle-Olimpo);
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;      
