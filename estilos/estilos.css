@@ -31,7 +31,20 @@ header{
     grid-area: header;
 }
 .nav-brand{
-    margin-right: 2rem;
+    margin-right: 2rem;    
+}
+.nav_brand-logo:hover
+{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+transition:  transform 0.5s;
+}
+.enterprise__objective:hover{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+transition:  transform 0.5s;
 }
 .navbar-collapse{
     font-size: 1.5rem;
@@ -208,6 +221,9 @@ header{
     margin: 30px auto 10px auto;  
     width: 320px;
     height: 220px;
+}
+.information__image:hover {
+    filter: sepia(60%);
 }
 .information__image img{           
     max-width: 100%;

@@ -17,11 +17,11 @@
                 <div class="navbaro__start w-100 ">
                     <nav class="navbar navbar-expand-lg navbar-light navbar-brand">
                         <div class="container-fluid">
-                            <a class="nav-brand" href="../index.html"><img
-                                src="../imagenes/olimpo_svg_white.svg"
-                                alt="logo olimpo"
-                                width="95"
-                                height="25"></a>
+                            <a class="nav-brand" href="../index.html">
+                                <div class="nav_brand-logo">
+                                    <img src="../imagenes/olimpo_svg_white.svg" alt="logo olimpo" width="95" height="25">
+                                </div>                                                             
+                            </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -69,23 +69,18 @@
                             <label for="inputNombre">Ingresa tu nombre:</label>
                                 <input class="form-control form-control-lg text-uppercase font-weight-bold" type="text" placeholder="Ingresa tu nombre" name="inputNombre">
                         </div>
-                        
                         <div class="form-group">
                             <label for="inputEmail">Ingresa tu email:</label>
                                 <input class="form-control form-control-lg text-uppercase" type="email" placeholder="ejemplo@gmail.com" name="inputEmail">
                         </div>
-                        
                         <div class="form-group">
                             <label for="inputObservaciones">Observaciones:</label>
                                 <textarea class="form-control form-control-lg text-uppercase" placeholder="Observaciones" name="inputObservaciones" rows="3"></textarea>                            
                         </div>
-
-                        
                         <div class="form-group">
                             <label for="inputEdad">Ingresa tu edad:</label>
                                 <input class="form-control form-control-lg text-uppercase" type="number" name="inputEdad" placeholder="Ingresa tu edad"><br/>
                         </div>
-
                         <div>Elige un servicio:</div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="lado" value="izquierda">
@@ -95,18 +90,14 @@
                             <input class="form-check-input" type="radio" name="lado" value="derecha">
                             <label class="form-check-label">Asesoría</label>
                         </div>
-                                                                       
-
                         <div class="form-group">
                             <label for="inputLetra">¿Que modalidad de trabajo para tu empresa necesitas de nosotros?</label>
-                            <select name="inputLetra" id="letra">
+                            <select class="form-select form-select-lg" name="inputLetra" id="letra">
                                 <option value="presencial">Presencial</option>
                                 <option value="remoto">Remoto</option>
                                 <option value="hibrido">H&iacute;brido</option>
                             </select>
-                        </div>
-                        
-                        
+                        </div>                       
                         <div class="form-check form-check-inline">                            
                             <input class="form-check-input" type="checkbox" name="inputAcepta" value="1">
                             <label for="inputAcepta">¿Quieres recibir información sobre nosotros?</label>
