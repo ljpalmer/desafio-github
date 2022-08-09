@@ -238,7 +238,7 @@ header{
     width: 60%;
 }
 main {
-    grid-area: main;
+    grid-area: main;    
 }
 section{    
     margin-top: 30px;
@@ -369,7 +369,7 @@ a{
         margin: auto;
     }
     .footer{
-        height: 315px;
+        height: 300px;
         display: flex;
         background-color:#f5f6fa;
         margin: auto;
@@ -411,17 +411,17 @@ a{
     .information__image{        
         display: block;
         margin: 30px auto 10px auto;  
-        width: 400px;
+        width: 440px;
         height: 239px;
     }
     .information__image img{       
-        max-width: 100%; 
+        min-width: 100%; 
         max-height: 100%;
     }
     .information__video{
         display: block;        
         width: 560px;        
-        height:315px;  
+        height:335px;  
         margin:20px auto 20px auto;        
     }
     .information__video iframe {
