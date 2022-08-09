@@ -3,6 +3,7 @@
     --Color-Background-Olimpo:#00b289;  
     --Color-Menu-Olimpo: #0e8a6d;
     --Color-Secundario-Olimpo:#fff;
+    --Color-SubTitle-Olimpo:#4a4a4a;
 }
 *{
     padding: 0;
@@ -22,14 +23,21 @@ body{
     grid-template-columns: 100%;    
     grid-template-areas: "header"
                           "main"                          
-                          "footer";
-    /* justify-items: center; */
+                          "footer";    
 }
 header{
     background-color: var(--Color-Background-Olimpo);       
-    height: 3.5rem;        
-    /* font-size: 1.5rem;  */
+    height: 3.5rem;            
     grid-area: header;
+}
+.nav-brand{
+    margin-right: 2rem;
+}
+.navbar-collapse{
+    font-size: 1.5rem;
+    background-color:var(--Color-Background-Olimpo);
+    border: 1px solid #4a4a4a;
+    padding: 10px;
 }
 .navbaro{    
     margin-left: auto; 
@@ -46,70 +54,21 @@ header{
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.12);
     -webkit-box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
 }
-.nav-brand{
-    margin-right: 2rem;
-}
-.navbar-collapse{
-    font-size: 1.5rem;
-    background-color:var(--Color-Background-Olimpo);
-    border: 1px solid #4a4a4a;
-    padding: 10px;
-}
-.navbaro__brand{
-    /* float: left; */  
+.navbaro__brand{     
     position: relative;
     position:left;            
-    margin-top: 1.5rem;
-    /* margin-left: 1.5rem; */
-    /* margin-left: 1rem;     */
+    margin-top: 1.5rem;    
 }
- 
-/* .container-fluid{
-    justify-content: flex-end;
-} */
-/* .navbaro__menu{
-    display: none;
-    position: absolute;
-    z-index: 1;
-} */
-/* .navbaro__toggle{
-    position: relative;
-    display: inline;
-    float: right;
-    margin-top: 1.5rem;
-    margin-right: 1rem;    
-} */
-/* .navbaro__toggle .menu-list{
-    min-width: 100%; /* Set width of the dropdown */    
-    /* display: none;
-    position: right;
-    z-index: 999;
-    left: 200;
-} */
-/* .navbaro__toggle:hover{
-    transform: translate(-2px , -2px);
-}
-.navbaro__toggle:active{
-    transform: translate(2px , 2px);    
-} */
-/* .navbaro__toggle:active .menu-list{
-    display: block;
-} */
 .navbaro__start{
 	width: 100%;
 	height: 4rem;
     margin-left: 20px;
     float: left;
 }
-/* .navbaro__end{
-	width: 20%;
-	height: 40px;
-    float: right;
-} */
-.navbar a:link{
+.navbaro a:link{
     color: var(--Color-Secundario-Olimpo);
 }
-.navbar a:visited{
+.navbaro a:visited{
     color: var(--Color-Secundario-Olimpo);
 }
 .navbaro__item{
@@ -128,8 +87,7 @@ header{
 .container{
     display: flex;    
     background-color: var(--Color-Background-Olimpo);  
-    width: 100%;
-    /* margin-bottom: 50px; */
+    width: 100%;    
 }
 .container__item{
     float: left;
@@ -166,7 +124,7 @@ header{
     padding-bottom: 40px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: #4a4a4a;
+    color: var(--Color-SubTitle-Olimpo);
     min-height: 380px;
     width: 100%;
     background-color: var(--Color-Secundario-Olimpo);
@@ -181,20 +139,16 @@ header{
 }
 .enterprise__objective{
     font-family: 'Poppins', sans-serif;
-    color: #4a4a4a;
+    color: var()--Color-SubTitle-Olimpo;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;      
-    
 }
 .enterprise__objective img{
-    height: 300px;
-    /* display: block; */
+    height: 300px;    
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    /* margin: 10px 20px 5px 20px;    */
-    
+    width: 90%;    
 }
 .enterprise__description{
     font-family: 'Roboto', sans-serif;
@@ -208,7 +162,6 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-
 .information{
     min-height: 570px;
     margin-top: 30px;        
@@ -250,30 +203,21 @@ header{
     font-size: 1.8rem;
     width: 85%;    
 }
-
 .information__image{        
     display: block;
     margin: 30px auto 10px auto;  
     width: 320px;
     height: 220px;
 }
-.information__image img{       
-    /* max-width: 100%; 
-    height: auto;
-    width: auto/9; /* Bug de ie8 */          
+.information__image img{           
     max-width: 100%;
     max-height: 100%;
 }
-
-
 .information__video{
     display: block;
-    margin: 10px 20px 10px 20px;
-    /* margin-left: 20px;
-    margin-right: 20px; */
+    margin: 10px 20px 10px 20px;    
     width: 70%;        
     height:225px; 
-    
 }
 .information__map{
     margin-bottom: 30px;
@@ -325,8 +269,7 @@ a{
 .footer__brand{
     justify-items: flex-start;
     margin-top: 30px;
-    padding-left: 2rem;
-    /* padding: 20px 0px 0px 100px; */
+    padding-left: 2rem;    
     width: 30%;
 }
 .footer p {    
@@ -339,13 +282,12 @@ a{
 .footer__links{
     justify-content: flex-end;
     text-align: right;    
-    margin-top: 80px;
-    /* padding: 20px 30px 0px 50px; */
+    margin-top: 80px;    
     width: 60%;
-    color: #4a4a4a;
+    color: var(--Color-SubTitle-Olimpo);
 }
 .footer__links a{
-    color: #4a4a4a;
+    color: var(--Color-SubTitle-Olimpo);
     font-weight: bold;
 }
 
@@ -354,38 +296,38 @@ a{
         grid-area: header;
         height: 4.5rem;        
     }
-    .navbaro{    
-        /* display: flex;        
+    section{
+        grid-area: seccion;
+        margin-top: 30px;        
+        width: 80%;         
         justify-content: center;
-        align-items: center; */
+    }
+    .navbaro{    
         margin-left: auto;
         margin-right: auto;
         width: 100%;          
         font-size: 1.5rem;            
     }
-    .navbaro__container{
-        /* position: absolute; */
+    .navbaro__container{ 
         top:0;
         left: 0;
         height: 65px;
         width: 100%;        
-        /* box-shadow: 0 0 8px 0 rgba(0,0,0,0.12);
-        -webkit-box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%); */
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.12);
+        -webkit-box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
     }
     .navbaro__brand{
         float: left;
         margin-top: 1.5rem;
         margin-left: 10rem;
     }
-
     .navbaro__start{
         width: 80%;
-        display: block;
-        /* text-align: right; */
-        /* height: 4rem;         */
-        /* float: left; */
-        /* display: table-cell; */
-        } 
+        display: block;        
+    } 
+    .navbaro__button{
+        font-size: 1.5rem;
+    }
     .container{
         display: flex;        
         flex-direction: row;
@@ -394,8 +336,7 @@ a{
         margin-bottom: 50px;
     }
     .container__item{
-        float: right;
-        /* text-align: left; */
+        float: right;        
         width: 40%;
     }
     .container__imagen{
@@ -419,12 +360,6 @@ a{
         margin: 25px 5px;
         max-width: 100%;
     }    
-    section{
-        grid-area: seccion;
-        margin-top: 30px;        
-        width: 80%;         
-        justify-content: center;
-    }
     .enterprise__objectives{
         display: flex;    
         flex-direction: row;    
@@ -432,19 +367,6 @@ a{
         align-items: center;
         width: 90%;
         margin: auto;
-    }
-    .navbaro__button{
-        font-size: 1.5rem;
-    }
-    /* .navbaro__toggle{
-        display: none;
-    }     */
-    .navbaro__menu{
-        display: contents;
-    }
-    .navbaro__menu ul{
-        display: flex;
-        list-style-type: none;
     }
     .footer{
         height: 315px;
@@ -470,7 +392,7 @@ a{
         margin-top: 80px;
         padding: 20px 30px 0px 50px;
         width: 70%;
-        color: #4a4a4a;
+        color: var(--Color-SubTitle-Olimpo);
     }
     .information{
         min-height: 700px;
@@ -479,7 +401,6 @@ a{
         background-color:  var(--Color-Secundario-Olimpo);
         align-items: center;
     }
-    
     .information__description{
         margin-top: 2rem;
         margin-left: auto;
@@ -498,10 +419,7 @@ a{
         max-height: 100%;
     }
     .information__video{
-        display: block;
-        /* margin: 10px 20px 10px 20px; */
-        /* margin-left: 20px;
-        margin-right: 20px; */
+        display: block;        
         width: 560px;        
         height:315px;  
         margin:20px auto 20px auto;        
@@ -510,7 +428,6 @@ a{
         min-height: 100%;
         min-width: 100%;
     }
-
     .navbar-collapse{
         font-size: 1.5rem;
         background-color:var(--Color-Background-Olimpo);
