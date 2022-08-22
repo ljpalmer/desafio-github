@@ -1,5 +1,5 @@
 header{
-    background-color: var(--Color-Background-Olimpo);       
+    background-color: $ColorBackgroundOlimpo;       
     height: 3.5rem;            
     grid-area: header;
 
@@ -21,7 +21,7 @@ header{
     }
     .navbar-collapse{
         font-size: 1.5rem;
-        background-color:var(--Color-Background-Olimpo);
+        background-color:$ColorBackgroundOlimpo;
         border: 1px solid #4a4a4a;
         padding: 10px;
     }

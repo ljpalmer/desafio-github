@@ -5,7 +5,7 @@ a{
 .navbar-collapse{
     @media only screen and (min-width: 992px){   
         font-size: 1.5rem;
-        background-color:var(--Color-Background-Olimpo);
+        background-color:$ColorBackgroundOlimpo;
         border: none;
         padding: 0;
     }    
@@ -13,14 +13,11 @@ a{
 
 .container{
     display: flex;    
-    background-color: var(--Color-Background-Olimpo);  
+    background-color:$ColorBackgroundOlimpo;  
     width: 100%;    
 
-    @media only screen and (min-width: 992px){    
-        // display: flex;        
-        flex-direction: row;
-        // background-color: var(--Color-Background-Olimpo);  
-        // width: 100%;
+    @media only screen and (min-width: 992px){            
+        flex-direction: row;        
         margin-bottom: 50px;
     }
 }
@@ -49,19 +46,14 @@ a{
 .container__title{
     font-weight: 700;       
     font-size: 5rem;
-    color: var(--Color-Secundario-Olimpo);        
+    color: $ColorSecundarioOlimpo;        
     width: 100%;
-
-    // @media only screen and (min-width: 992px){    
-    //     font-weight: 700;       
-    //     font-size: 5rem;        
-    // }
 }
 .container__description{
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     text-align: left;
-    color: var(--Color-Secundario-Olimpo);    
+    color: $ColorSecundarioOlimpo;    
     margin: 25px 25px auto;    
 }
 .container__stacks img{
@@ -77,10 +69,10 @@ a{
     padding-bottom: 40px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: var(--Color-SubTitle-Olimpo);
+    color: $ColorSubtitleOlimpo;
     min-height: 380px;
     width: 100%;
-    background-color: var(--Color-Secundario-Olimpo);
+    background-color: $ColorSecundarioOlimpo;
     @media only screen and (min-width: 992px){         
 
     }
@@ -98,7 +90,7 @@ a{
 }
 .enterprise__objective{
     font-family: 'Poppins', sans-serif;
-    color: var(--Color-SubTitle-Olimpo);
+    color: $ColorSubtitleOlimpo;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;   
@@ -128,7 +120,7 @@ a{
     min-height: 570px;
     margin-top: 30px;        
     width: 100%;    
-    background-color:  var(--Color-Secundario-Olimpo);
+    background-color: $ColorSecundarioOlimpo;
     align-items: center;
     @media only screen and (min-width: 992px){                     
         min-height: 700px;       
@@ -156,7 +148,7 @@ a{
 .information__title{
     padding-top: 3rem;
     font-family: 'Roboto', sans-serif;
-    color: #4a4a4a;
+    color: $ColorSubtitleOlimpo;
     font-size: 3.5rem;    
     text-align: center;
     @media only screen and (min-width: 992px){   
@@ -226,7 +218,7 @@ a{
 .information__form{
     margin-bottom: 30px;
     padding: 20px;
-    border: 1px solid #4a4a4a;
+    border: 1px solid $ColorSubtitleOlimpo;    ;
     border-radius: 10px;
     font-size: 1.8rem;
 }

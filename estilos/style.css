@@ -1,6 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700;900&family=Roboto:wght@100;700;900&display=swap");
+:root {
+  --Color-Background-Olimpo:#00b289;
+  --Color-Menu-Olimpo: #0e8a6d;
+  --Color-Secundario-Olimpo:#fff;
+  --Color-SubTitle-Olimpo:#4a4a4a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: rgb(119, 50, 132);
+}
+
+body {
+  background-color: #00b289;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "main" "footer";
+}
+
 header {
-  background-color: var(--Color-Background-Olimpo);
+  background-color: #00b289;
   height: 3.5rem;
   grid-area: header;
 }
@@ -17,7 +46,7 @@ header .enterprise__objective:hover {
 }
 header .navbar-collapse {
   font-size: 1.5rem;
-  background-color: var(--Color-Background-Olimpo);
+  background-color: #00b289;
   border: 1px solid #4a4a4a;
   padding: 10px;
 }
@@ -188,7 +217,7 @@ a {
 @media only screen and (min-width: 992px) {
   .navbar-collapse {
     font-size: 1.5rem;
-    background-color: var(--Color-Background-Olimpo);
+    background-color: #00b289;
     border: none;
     padding: 0;
   }
@@ -196,7 +225,7 @@ a {
 
 .container {
   display: flex;
-  background-color: var(--Color-Background-Olimpo);
+  background-color: #00b289;
   width: 100%;
 }
 @media only screen and (min-width: 992px) {
@@ -235,7 +264,7 @@ a {
 .container__title {
   font-weight: 700;
   font-size: 5rem;
-  color: var(--Color-Secundario-Olimpo);
+  color: #ffffff;
   width: 100%;
 }
 
@@ -243,7 +272,7 @@ a {
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   text-align: left;
-  color: var(--Color-Secundario-Olimpo);
+  color: #ffffff;
   margin: 25px 25px auto;
 }
 
@@ -258,10 +287,10 @@ a {
   padding-bottom: 40px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  color: var(--Color-SubTitle-Olimpo);
+  color: #4a4a4a;
   min-height: 380px;
   width: 100%;
-  background-color: var(--Color-Secundario-Olimpo);
+  background-color: #ffffff;
 }
 .enterprise__objectives {
   display: flex;
@@ -279,7 +308,7 @@ a {
 
 .enterprise__objective {
   font-family: "Poppins", sans-serif;
-  color: var(--Color-SubTitle-Olimpo);
+  color: #4a4a4a;
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -310,7 +339,7 @@ a {
   min-height: 570px;
   margin-top: 30px;
   width: 100%;
-  background-color: var(--Color-Secundario-Olimpo);
+  background-color: #ffffff;
   align-items: center;
 }
 @media only screen and (min-width: 992px) {

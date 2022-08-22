@@ -1,0 +1,33 @@
+$ColorBackgroundOlimpo:#00b289;
+$ColorMenuOlimpo:#0e8a6d;
+$ColorSecundarioOlimpo:#ffffff;
+$ColorSubtitleOlimpo:#4a4a4a;
+
+:root{
+    --Color-Background-Olimpo:#00b289;  
+    --Color-Menu-Olimpo: #0e8a6d;
+    --Color-Secundario-Olimpo:#fff;
+    --Color-SubTitle-Olimpo:#4a4a4a;
+}
+
+*{
+    padding: 0;
+    margin: 0;    
+}
+html{
+    font-size: 62.5%;    
+}
+h1 {
+    color: rgb(119,50,132);
+}
+
+body{
+    background-color: $ColorBackgroundOlimpo;  
+    font-family: 'Poppins', sans-serif;       
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;    
+    grid-template-areas: "header"
+                          "main"                          
+                          "footer";    
+}
