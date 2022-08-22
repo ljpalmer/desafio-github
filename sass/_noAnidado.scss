@@ -101,6 +101,7 @@ a{
     margin-right: auto;
     width: 90%;        
 }
+
 .enterprise__description{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -114,7 +115,12 @@ a{
     margin-right: auto;
 }
 
-
+.enterprise__objective:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition:  transform 0.5s;
+}
 
 .information{
     min-height: 570px;
