@@ -8,16 +8,13 @@ header{
     }
     .nav_brand-logo:hover
     {
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-        transition:  transform 0.5s;
+        @extend .efectoAgrandarImagen;
     }
     .navbar-collapse{
         @media only screen and (max-width: 992px){       
             font-size: 1.5rem;
             background-color:$ColorBackgroundOlimpo;
-            border: 1px solid $ColorSubtitleOlimpo;
+            border: 2px solid $ColorMenuOlimpo;
             padding: 10px;
         }
     }
@@ -29,12 +26,11 @@ header{
             width: 100%;                      
         } 
     }
-    .navbaro__container{    
+    .navbaro__container{   
+        @include sizeHeightWidth(55px,100%); 
         position: absolute;
         top:0;
-        left: 0;
-        height: 55px;
-        width: 100%;
+        left: 0;        
         padding-top: 1rem;
         box-shadow: 0 0 8px 0 rgba(0,0,0,0.12);
         -webkit-box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
@@ -52,8 +48,7 @@ header{
         }
     }
     .navbaro__start{
-        width: 100%;
-        height: 4rem;
+        @include sizeHeightWidth(4rem,100%);        
         margin-left: 20px;
         float: left;
         @media only screen and (min-width: 992px){    
@@ -84,8 +79,7 @@ header{
         }
     }
 
-    @media only screen and (min-width: 992px){    
-        // grid-area: header;
+    @media only screen and (min-width: 992px){            
         height: 4.5rem;        
     }
 }
@@ -102,8 +96,7 @@ main {
         width: 100%;    
         text-align: center; 
 
-        @media only screen and (min-width: 992px){    
-            // grid-area: seccion;
+        @media only screen and (min-width: 992px){                
             margin-top: 30px;        
             width: 80%;         
             justify-content: center;
@@ -134,8 +127,7 @@ footer{
         margin-top: 30px;
         padding-left: 2rem;    
         width: 30%;
-        @media only screen and (min-width: 992px){    
-            // justify-items: flex-start;
+        @media only screen and (min-width: 992px){                
             margin-top: 50px;
             padding: 20px 0px 0px 100px;
             width: 70%;
@@ -167,7 +159,6 @@ footer{
         color: $ColorSubtitleOlimpo;
         font-weight: bold;
     }
-
 
     @media only screen and (min-width: 992px){    
         height: 300px;        
