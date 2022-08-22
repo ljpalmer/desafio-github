@@ -33,15 +33,13 @@ header .nav_brand-logo:hover {
   transform: scale(1.3);
   transition: transform 0.5s;
 }
-header .enterprise__objective:hover {
-  transform: scale(1.3);
-  transition: transform 0.5s;
-}
-header .navbar-collapse {
-  font-size: 1.5rem;
-  background-color: #00b289;
-  border: 1px solid #4a4a4a;
-  padding: 10px;
+@media only screen and (max-width: 992px) {
+  header .navbar-collapse {
+    font-size: 1.5rem;
+    background-color: #00b289;
+    border: 1px solid #4a4a4a;
+    padding: 10px;
+  }
 }
 header .navbaro {
   margin-left: auto;
@@ -92,10 +90,10 @@ header .navbaro__start {
   }
 }
 header .navbaro a:link {
-  color: var(--Color-Secundario-Olimpo);
+  color: #ffffff;
 }
 header .navbaro a:visited {
-  color: var(--Color-Secundario-Olimpo);
+  color: #ffffff;
 }
 header .navbaro__item {
   display: inline-block;
@@ -105,9 +103,9 @@ header .navbaro__item {
 header .navbaro__button {
   border-width: 2px;
   font-weight: 600;
-  border: 1px solid var(--Color-Secundario-Olimpo);
+  border: 1px solid #ffffff;
   padding: 10px 20px 10px 20px;
-  color: var(--Color-Secundario-Olimpo);
+  color: #ffffff;
   background: transparent;
 }
 @media only screen and (min-width: 992px) {
@@ -185,7 +183,7 @@ footer .footer__links {
   text-align: right;
   margin-top: 80px;
   width: 60%;
-  color: var(--Color-SubTitle-Olimpo);
+  color: #4a4a4a;
 }
 @media only screen and (min-width: 992px) {
   footer .footer__links {
@@ -194,7 +192,7 @@ footer .footer__links {
   }
 }
 footer .footer__links a {
-  color: var(--Color-SubTitle-Olimpo);
+  color: #4a4a4a;
   font-weight: bold;
 }
 @media only screen and (min-width: 992px) {
@@ -326,6 +324,11 @@ a {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.enterprise__objective:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s;
 }
 
 .information {

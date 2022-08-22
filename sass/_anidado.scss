@@ -8,22 +8,18 @@ header{
     }
     .nav_brand-logo:hover
     {
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-    transition:  transform 0.5s;
-    }
-    .enterprise__objective:hover{
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-    transition:  transform 0.5s;
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        transition:  transform 0.5s;
     }
     .navbar-collapse{
-        font-size: 1.5rem;
-        background-color:$ColorBackgroundOlimpo;
-        border: 1px solid #4a4a4a;
-        padding: 10px;
+        @media only screen and (max-width: 992px){       
+            font-size: 1.5rem;
+            background-color:$ColorBackgroundOlimpo;
+            border: 1px solid $ColorSubtitleOlimpo;
+            padding: 10px;
+        }
     }
     .navbaro{    
         margin-left: auto; 
@@ -66,10 +62,10 @@ header{
         }
     }
     .navbaro a:link{
-        color: var(--Color-Secundario-Olimpo);
+        color: $ColorSecundarioOlimpo;
     }
     .navbaro a:visited{
-        color: var(--Color-Secundario-Olimpo);
+        color: $ColorSecundarioOlimpo;
     }
     .navbaro__item{
         display: inline-block;    
@@ -79,9 +75,9 @@ header{
     .navbaro__button{
         border-width: 2px;
         font-weight: 600;
-        border: 1px solid var(--Color-Secundario-Olimpo);  
+        border: 1px solid $ColorSecundarioOlimpo;  
         padding:10px 20px 10px 20px;
-        color: var(--Color-Secundario-Olimpo);
+        color: $ColorSecundarioOlimpo;
         background: transparent;
         @media only screen and (min-width: 992px){    
             font-size: 1.5rem; 
@@ -161,14 +157,14 @@ footer{
         text-align: right;    
         margin-top: 80px;    
         width: 60%;
-        color: var(--Color-SubTitle-Olimpo);
+        color: $ColorSubtitleOlimpo;
         @media only screen and (min-width: 992px){      
             padding: 20px 30px 0px 50px;
             width: 70%;            
         } 
     }
     .footer__links a{
-        color: var(--Color-SubTitle-Olimpo);
+        color: $ColorSubtitleOlimpo;
         font-weight: bold;
     }
 
