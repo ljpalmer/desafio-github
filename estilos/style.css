@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700;900&family=Roboto:wght@100;700;900&display=swap");
-:root {
-  --Color-Background-Olimpo:#00b289;
-  --Color-Menu-Olimpo: #0e8a6d;
-  --Color-Secundario-Olimpo:#fff;
-  --Color-SubTitle-Olimpo:#4a4a4a;
-}
-
 * {
   padding: 0;
   margin: 0;
