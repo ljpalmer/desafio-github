@@ -28,7 +28,7 @@ h1 {
 
 body{
     background-color: $ColorBackgroundOlimpo;  
-    font-family: 'Poppins', sans-serif;       
+    font-family: $body-font-family-poppins;       
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;    
