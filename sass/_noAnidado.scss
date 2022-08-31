@@ -36,7 +36,6 @@ a{
     @include sizeHeightWidth(150px, 300px);
     float: right;
     margin: auto; 
-
     @media only screen and (min-width: 992px){       
         @include sizeHeightWidth(300px,600px)         
     }
@@ -48,7 +47,7 @@ a{
     width: 100%;
 }
 .container__description{
-    font-family: 'Poppins', sans-serif;
+    font-family: $body-font-family-poppins;
     font-size: 2em;
     text-align: left;
     color: $ColorSecundarioOlimpo;    
@@ -66,14 +65,11 @@ a{
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: $body-font-family-poppins;
     color: $ColorSubtitleOlimpo;
     min-height: 380px;
     width: 100%;
     background-color: $ColorSecundarioOlimpo;
-    @media only screen and (min-width: 992px){         
-
-    }
 }
 .enterprise__objectives{
     display: flex;    
@@ -87,7 +83,7 @@ a{
     }
 }
 .enterprise__objective{
-    font-family: 'Poppins', sans-serif;
+    font-family: $body-font-family-poppins;
     color: $ColorSubtitleOlimpo;
     font-size: 1.2rem;
     font-weight: bold;
@@ -97,11 +93,10 @@ a{
     @include sizeHeightWidth(300px,90%);    
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .enterprise__description{
-    font-family: 'Roboto', sans-serif;
+    font-family: $body-font-family-roboto;
     font-weight: bold;
     font-size: 3rem; 
     margin: 2.8rem;
@@ -148,7 +143,7 @@ a{
 }
 .information__title{
     padding-top: 3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: $body-font-family-roboto;
     color: $ColorSubtitleOlimpo;
     font-size: 3.5rem;    
     text-align: center;
@@ -159,7 +154,7 @@ a{
 .information__subtitle{
     display: block;
     color: #A9ABAC;
-    font-family: 'Roboto', sans-serif;
+    font-family: $body-font-family-roboto;
     font-size: 1.8rem;
     text-align: center;
     @media only screen and (min-width: 992px){   
