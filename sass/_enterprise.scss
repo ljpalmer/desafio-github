@@ -1,0 +1,51 @@
+.enterprise
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: $body-font-family-poppins;
+    color: $ColorSubtitleOlimpo;
+    min-height: 380px;
+    width: 100%;
+    background-color: $ColorSecundarioOlimpo;
+}
+.enterprise__objectives{
+    display: flex;    
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    @media only screen and (min-width: 992px){                     
+            flex-direction: row;                       
+    }
+}
+.enterprise__objective{
+    font-family: $body-font-family-poppins;
+    color: $ColorSubtitleOlimpo;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+.enterprise__objective img{
+    @include sizeHeightWidth(320px,90%);    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enterprise__description{
+    font-family: $body-font-family-roboto;
+    font-weight: bold;
+    font-size: 3rem; 
+    margin: 2.8rem;
+}
+.enterprise__information{
+    font-size: 1.6rem; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enterprise__objective:hover{
+    @extend .efectoAgrandarImagen;
+}

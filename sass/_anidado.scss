@@ -4,13 +4,19 @@ header{
     grid-area: header;
 
     .nav-brand{
-        margin-right: 2rem;    
+        margin-right: 2rem;                   
     }
+
+    .nav-item:hover{
+        @extend .estiloNavItem;        
+    }
+
     .nav_brand-logo:hover
     {
         @extend .efectoAgrandarImagen;
     }
     .navbar-collapse{
+        z-index: 999;
         @media only screen and (max-width: 992px){       
             font-size: 1.5rem;
             background-color:$ColorBackgroundOlimpo;
@@ -23,6 +29,7 @@ header{
         margin-left: auto; 
         margin-right: auto;    
         font-size: 1.5rem;   
+        z-index: 1;
         @media only screen and (min-width: 992px){                
             width: 100%;                      
         } 
@@ -68,6 +75,7 @@ header{
         padding: 5px;
         margin: 10px 10px;
     }
+
     .navbaro__button{
         border-width: 2px;
         font-weight: 600;
@@ -113,69 +121,3 @@ main {
         margin: auto;
     }
 }
-
-footer{    
-    height: 180px;
-    display: flex;
-    font-size: 1.2rem;
-    background-color:#f5f6fa;
-    margin: auto;
-    width: 100%;
-    grid-area: footer;
-
-
-    .footer__brand{        
-        justify-items: flex-start;
-        margin-top: 30px;
-        padding-left: 2rem;    
-        width: 30%;
-        @media only screen and (min-width: 992px){                
-            margin-top: 50px;
-            padding: 20px 0px 0px 100px;
-            width: 70%;
-        }
-
-    }
-    .footer p {    
-        height: 80px;     
-        font-size: 1rem; 
-        justify-items: center;
-        align-items:  center;  
-        @media only screen and (min-width: 992px){                  
-            font-size: 1.2rem;             
-        }
-    }
-    
-    .footer__links{
-        justify-content: flex-end;
-        text-align: right;    
-        margin-top: 80px;    
-        width: 60%;
-        color: $ColorSubtitleOlimpo;
-        
-        @media only screen and (min-width: 992px){      
-            padding: 20px 30px 0px 50px;
-            width: 70%;            
-        } 
-    }
-    .footer__links a{
-        color: $ColorSubtitleOlimpo;
-        font-weight: bold;
-    }
-
-    .footer__social img{
-        @include sizeHeightWidth(45px,45px);  
-        margin: 2rem 2rem 0;      
-        
-    }
-
-    .footer__social img:hover{
-        @extend .efectoAgrandarImagen;
-    }
-
-    @media only screen and (min-width: 992px){    
-        height: 300px;    
-       
-    }
-}
-

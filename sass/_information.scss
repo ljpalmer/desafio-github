@@ -1,0 +1,119 @@
+.information{
+    min-height: 570px;
+    margin-top: 30px;        
+    width: 100%;    
+    background-color: $ColorSecundarioOlimpo;
+    align-items: center;
+    @media only screen and (min-width: 992px){                     
+        min-height: 700px;       
+    }
+}
+.information__article{
+    margin-top: -12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;   
+    @media only screen and (min-width: 992px){   
+
+    }     
+}
+.information__number{
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    color: #A9ABAC;
+    font-weight: bold;
+    @media only screen and (min-width: 992px){   
+        
+    }   
+}
+.information__title{
+    padding-top: 3rem;
+    font-family: $body-font-family-roboto;
+    font-weight: bold;
+    color: $ColorSubtitleOlimpo;
+    font-size: 3.5rem;    
+    text-align: center;
+    @media only screen and (min-width: 992px){   
+        
+    }   
+}
+.information__subtitle{
+    display: block;
+    color: #A9ABAC;
+    font-family: $body-font-family-roboto;
+    font-size: 1.8rem;
+    text-align: center;
+    @media only screen and (min-width: 992px){   
+        
+    }   
+}
+.information__description{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.8rem;
+    width: 85%;    
+    @media only screen and (min-width: 992px){           
+        // font-size: 2.5rem;
+        width: 85%;    
+    }   
+}
+.information__image{      
+    @include sizeHeightWidth(250px,320px);  
+    display: block;
+    margin: 30px auto 10px auto;      
+    @media only screen and (min-width: 992px){    
+        @include sizeHeightWidth(239px,440px);               
+    }   
+}
+.information__image:hover {
+    filter: sepia(60%);
+}
+.information__image img{           
+    max-width: 100%;
+    max-height: 100%;
+}
+.information__video{
+    @include sizeHeightWidth(200px,70%);
+    display: block;    
+    margin: auto; 
+    @media only screen and (max-width: 660px){         
+        @include sizeHeightWidth(280px,400px);
+    }
+    @media only screen and (min-width: 992px){         
+        @include sizeHeightWidth(335px,560px);                                       
+    }
+}
+.information__video iframe {
+    @media only screen and (min-width: 992px){     
+        min-height: 100%;
+        min-width: 100%;
+    }    
+    @media only screen and (max-width: 500px){  
+        position: absolute;
+        left: 4rem;
+    }
+
+}
+.information__map{
+    margin-bottom: 30px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
+}
+.information__form{
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid $ColorSubtitleOlimpo;    ;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+.information__plans{
+    margin-left: auto;
+    margin-right: auto;   
+    justify-content: center;    
+    width: 60%;
+}
+.information__leyenda{
+font-size: 2.2rem;
+}

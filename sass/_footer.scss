@@ -1,0 +1,91 @@
+footer{    
+    height: 180px;
+    display: flex;
+    font-size: 1.2rem;
+    background-color:#f5f6fa;
+    margin: auto;
+    width: 100%;
+    grid-area: footer;
+    height: 300px;   
+    padding-top: 5rem;
+
+    .footer__brand{        
+        justify-items: flex-start;
+        margin-top: 30px;
+        padding-left: 2rem;    
+        width: 30%;
+       
+        @media only screen and (min-width: 992px){                                   
+            width: 70%;
+            padding: 20px 0px 0px 100px;
+        }
+    }
+    .footer p {            
+        height: 80px;     
+        font-size: 1rem; 
+        justify-items: center;
+        align-items:  center;  
+
+        @media only screen and (min-width: 992px){                  
+            font-size: 1.2rem;             
+        }
+    }
+    .footer__contact{
+        justify-content: flex-end;
+        text-align: right;    
+    }
+    .footer__links{
+        justify-content: flex-end;           
+        padding-top: 50px;    
+        width: 60%;
+        color: $ColorSubtitleOlimpo;
+        padding: 20px 30px 0px 50px;
+
+        @media only screen and (min-width: 992px){      
+            justify-content: flex-end;
+            width: 70%;            
+        } 
+    }
+    .footer__links a{
+        color: black;
+        font-weight: bold;
+    }
+    .footer__social{
+        display: flex;        
+        justify-content:right;  
+        padding-top: 2rem;
+    }
+    .footer__social a{
+        color: $ColorBackgroundOlimpo;
+    }
+    .footer__social img{        
+        @include sizeHeightWidth(45px,45px);  
+        margin: 0rem 3rem 0 1rem;  
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+        justify-items: right;
+        
+        @media only screen and (max-width: 992px){    
+            @include sizeHeightWidth(25px,25px);            
+        }
+        
+    }
+    .footer__social p{        
+        display:inline-block;
+        font-family: $body-font-family-roboto;
+
+        @media only screen and (max-width: 660px){
+            display: none;
+        }
+    }
+    .footer__social img:hover{
+        @extend .efectoAgrandarImagen;
+    }
+
+    @media only screen and (max-width: 992px){    
+        font-size: 1rem;
+        height: 320px;   
+    }
+}
