@@ -1,5 +1,5 @@
-# desafio-github
+# Proyecto Final CODER
 
-**Desafio Coder House**
+**Curso de Desarrollo WEB Coder House**
 
-El presente repositorio es el avance del proyecto final para el curso de Desarrollo Web.
+El presente repositorio contiene el proyecto final para el curso de Desarrollo Web realizado en Coder House.
