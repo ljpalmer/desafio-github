@@ -77,12 +77,16 @@
 .information__video{
     @include sizeHeightWidth(200px,70%);
     display: block;    
-    margin: auto; 
-    @media only screen and (max-width: 660px){         
-        @include sizeHeightWidth(280px,400px);
+
+    @media only screen and (max-width: 991px){         
+        @include sizeHeightWidth(150px,200px);
+        margin: auto;         
+        position: relative;
+        left:-4rem;
     }
     @media only screen and (min-width: 992px){         
-        @include sizeHeightWidth(335px,560px);                                       
+        @include sizeHeightWidth(335px,560px);  
+        margin: auto;                                      
     }
 }
 .information__video iframe {
@@ -90,10 +94,11 @@
         min-height: 100%;
         min-width: 100%;
     }    
-    @media only screen and (max-width: 500px){  
-        position: absolute;
-        left: 4rem;
-    }
+    // @media only screen and (max-width: 500px){  
+    //     @include sizeHeightWidth(180px,300px);
+    //     position: absolute;
+    //     left: 0.5rem;
+    // }
 
 }
 .information__map{
