@@ -72,8 +72,8 @@ footer{
         }
         
     }
-    .footer__social p{        
-        display:inline-block;
+    .footer__social div p{        
+        display:inline-block;                
         font-family: $body-font-family-roboto;
 
         @media only screen and (max-width: 660px){

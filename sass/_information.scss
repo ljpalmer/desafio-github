@@ -13,9 +13,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;   
-    @media only screen and (min-width: 992px){   
-
-    }     
 }
 .information__number{
     display: block;
@@ -23,9 +20,6 @@
     text-align: center;
     color: #A9ABAC;
     font-weight: bold;
-    @media only screen and (min-width: 992px){   
-        
-    }   
 }
 .information__title{
     padding-top: 3rem;
@@ -34,9 +28,6 @@
     color: $ColorSubtitleOlimpo;
     font-size: 3.5rem;    
     text-align: center;
-    @media only screen and (min-width: 992px){   
-        
-    }   
 }
 .information__subtitle{
     display: block;
@@ -44,9 +35,6 @@
     font-family: $body-font-family-roboto;
     font-size: 1.8rem;
     text-align: center;
-    @media only screen and (min-width: 992px){   
-        
-    }   
 }
 .information__description{
     margin-top: 2rem;
@@ -55,7 +43,6 @@
     font-size: 1.8rem;
     width: 85%;    
     @media only screen and (min-width: 992px){           
-        // font-size: 2.5rem;
         width: 85%;    
     }   
 }
@@ -94,12 +81,6 @@
         min-height: 100%;
         min-width: 100%;
     }    
-    // @media only screen and (max-width: 500px){  
-    //     @include sizeHeightWidth(180px,300px);
-    //     position: absolute;
-    //     left: 0.5rem;
-    // }
-
 }
 .information__map{
     margin-bottom: 30px;
@@ -120,5 +101,5 @@
     width: 60%;
 }
 .information__leyenda{
-font-size: 2.2rem;
+    font-size: 2.2rem;
 }

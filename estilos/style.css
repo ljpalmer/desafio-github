@@ -302,6 +302,7 @@ a {
   margin-right: auto;
   width: 100%;
 }
+
 .information__number {
   display: block;
   font-size: 5rem;
@@ -309,6 +310,7 @@ a {
   color: #A9ABAC;
   font-weight: bold;
 }
+
 .information__title {
   padding-top: 3rem;
   font-family: "Roboto", sans-serif;
@@ -317,6 +319,7 @@ a {
   font-size: 3.5rem;
   text-align: center;
 }
+
 .information__subtitle {
   display: block;
   color: #A9ABAC;
@@ -324,6 +327,7 @@ a {
   font-size: 1.8rem;
   text-align: center;
 }
+
 .information__description {
   margin-top: 2rem;
   margin-left: auto;
@@ -492,12 +496,12 @@ footer .footer__social img {
     width: 25px;
   }
 }
-footer .footer__social p {
+footer .footer__social div p {
   display: inline-block;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (max-width: 660px) {
-  footer .footer__social p {
+  footer .footer__social div p {
     display: none;
   }
 }
