@@ -5,7 +5,7 @@
 El presente repositorio contiene el proyecto final para el curso de Desarrollo Web realizado en Coder House.
 
 
-# Indicaciones
+# Datos del Proyecto
 
 La pagina esta desarrollada es responsiva, esta responde a las siguientes resoluciones:
 
@@ -23,4 +23,4 @@ Fue desarrollado con:
   - CSS Grid
   
 Se ha considerado colocar las etiquetas SEO, en cada una de las paginas se puede visualizar el detalle en el mismo código y tambien desde el siguiente documento compartido:
-https://drive.google.com/file/d/1KAQIfra6IMRdVN6_GUsPpQh1F6u8tlO4/view?usp=sharing
+https://drive.google.com/file/d/1m798GEi9u8FVifrU8xYOB7WZElKNPNYM/view?usp=sharing
